@@ -1,6 +1,11 @@
-<!DOCTYPE html>
 <html>
   <head>
+    <!-- <script>
+            function load_result {
+           document.getElementById("result").innerHTML='<object type="text/html" data="result.html" ></object>';
+      }
+    </script> -->
+
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -82,13 +87,73 @@
       content="img/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>WORK FROM ANYWHERE | Find new cafés in your town</title>
   </head>
 
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="main-head">
+      <section class="section-header">
+        <div class="container-1-3">
+          <div class="item-1-2">
+            <a href="index.html"
+              ><img
+                class="logo"
+                src="img/logo.svg"
+                alt="logo of WORK FROM ANYWHERE"
+            /></a>
+          </div>
+          <div class="item-2-2">
+            <nav class="main-nav">
+              <ul>
+                <li>add new cafés</li>
+                <li>about</li>
+                <li>contact</li>
+                <li><div class="button-green align-right">Sign up</div></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="content">
+      <section class="section-above-the-field">
+        <div class="container__fullwidth-1-1">
+          <div class="item-1-1">
+            <h1>Find the best coffee shop to work nearby</h1>
+            <p></p>
+            <div>
+              <form>
+                <input class="search" type="text" placeholder="Search..." />
+              </form>
+            </div>
+            <div class="col-1-2">
+              <div class="button-green">Discover</div>
+            </div>
+            <div class="col-2-2"><div class="button-black">Sign up</div></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-information"></section>
+      <section class="section-cafe-overview">
+        <div id="content"></div>
+      </section>
+      <section class="section-parallax"></section>
+      <section class="section-content-right"></section>
+      <img class="highlight-image" src="img/feature.jpg" />
+      <section class="section-content-left"></section>
+      <section class="section-content-right"></section>
+      <section class="section-cta"></section>
+    </main>
+    <footer class="main-footer">
+      <section class="section-footer">
+        <div class="container">
+          <div class="social-media">Facebook</div>
+          <div class="col-1-3">©2019 WORK FROM ANYWHERE</div>
+          <div class="col-1-3"></div>
+          <div class="col-1-3">Imprint | Data privacy</div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

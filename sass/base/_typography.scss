@@ -2,6 +2,29 @@
  * Basic typography style for copy text
  */
 body {
+  font-family: $text-font-stack;
+  font-weight: 400;
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: $text-font-stack;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: $text-font-stack;
+  font-weight: 600;
+  color: $text-color;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: $text-font-stack;
+  font-weight: 600;
+  color: $text-color;
+  font-size: 1.5rem;
 }

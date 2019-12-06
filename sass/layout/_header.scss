@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.main-head {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  max-width: 100%;
+  padding: 20px 0px;
+}
+
+nav ul {
+  display: inline;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 20px;
+}

@@ -7,22 +7,22 @@
   &:visited {
     border-radius: 5px;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     cursor: pointer;
   }
   &-black {
-    background: $dark-grey;
+    background: $brand-secondary-color;
     color: #ffffff;
     border-radius: 5px;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     cursor: pointer;
   }
   &-black:hover {
-    background: $brand-secondary-color;
+    background: $dark-grey;
     border-radius: 5px;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     cursor: pointer;
   }
   &-green {
@@ -30,7 +30,7 @@
     color: #ffffff;
     border-radius: 5px;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     cursor: pointer;
   }
   &-green:hover {
@@ -38,13 +38,15 @@
   }
   &-transparent {
     background: transparent;
-    color: #ffffff;
+    color: #000000;
     border-radius: 5px;
+    border: 1px solid #000000;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     cursor: pointer;
   }
   &-transparent:hover {
     background: $brand-secondary-color;
+    color: white;
   }
 }

@@ -1,9 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
 .section-above-the-field {
   background-image: url(../img/feature.jpg);
   height: 80vh;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
 .section-cta {
   widows: 100%;
@@ -33,6 +36,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
 .button-center {
   position: absolute;

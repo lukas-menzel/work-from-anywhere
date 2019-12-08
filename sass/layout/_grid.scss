@@ -18,11 +18,13 @@
 .information {
   grid-template-columns: 1fr;
   max-width: $max-width;
+  padding: 0 20px;
 }
 
 .cafe-results {
   grid-template-columns: 1fr;
   max-width: $max-width;
+  padding: 0 20px;
 }
 
 .parallax {
@@ -33,19 +35,20 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   max-width: $max-width;
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 
 .cta {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   max-width: $max-width;
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 
 .footer {
   grid-template-columns: 1fr;
   max-width: $max-width;
+  padding: 0 20px;
 }
 
 //items

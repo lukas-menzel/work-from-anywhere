@@ -39,9 +39,13 @@ Befor starting designing I also researched and reviewed several competitors (wor
 
 For the wireframing I used figma and a wireframing template. This enabled me to quickly sketch a first draft of WORK FROM ANYWHERE. The wireframes are created as a desktop design since it is easier to design for desktop devices and has less boundaries.
 
+<img src="wireframes-home.png">
+
 ### Screendesign
 
 For the screendesign I also used figma, but started from creating first a mobile design and than the desktop. I used a 4 column grid for the mobile design and a 12 column grid for the desktop design. I didn't create an extra tablet version since the layout is not very complex and needed only a minor adoption to the tablet layout. To make the whole design consistent I created reusable components for the most common elements (e.g. buttons).
+
+<img src="screendesign-desktop.png">
 
 ### Implementation in HTML and CSS
 

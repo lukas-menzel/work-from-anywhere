@@ -10,7 +10,7 @@
     padding: 20px 60px;
     cursor: pointer;
   }
-  &-black {
+  &--black {
     background: $brand-secondary-color;
     color: #ffffff;
     border-radius: 5px;
@@ -18,14 +18,14 @@
     padding: 20px 60px;
     cursor: pointer;
   }
-  &-black:hover {
+  &--black:hover {
     background: $dark-grey;
     border-radius: 5px;
     text-align: center;
     padding: 20px 60px;
     cursor: pointer;
   }
-  &-green {
+  &--green {
     background: $brand-color;
     color: #ffffff;
     border-radius: 5px;
@@ -33,10 +33,10 @@
     padding: 20px 60px;
     cursor: pointer;
   }
-  &-green:hover {
+  &--green:hover {
     background: $brand-secondary-color;
   }
-  &-transparent {
+  &--transparent {
     background: transparent;
     color: #000000;
     border-radius: 5px;
@@ -45,8 +45,39 @@
     padding: 20px 60px;
     cursor: pointer;
   }
-  &-transparent:hover {
+  &--transparent:hover {
     background: $brand-secondary-color;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    &,
+    &:link,
+    &:visited {
+      padding: 20px 20px;
+    }
+
+    &--black {
+      padding: 20px 20px;
+    }
+    &--black:hover {
+      padding: 20px 20px;
+    }
+
+    &--green {
+      padding: 20px 20px;
+    }
+    &--green:hover {
+      padding: 20px 20px;
+    }
+
+    &--transparent {
+      padding: 20px 20px;
+    }
+    &--transparaent:hover {
+      padding: 20px 20px;
+    }
   }
 }

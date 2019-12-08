@@ -15,22 +15,11 @@
   color: #ffffff;
   padding: 40px 0px;
 }
-.col-1-2 {
-  width: 50%;
-  float: left;
-  padding: 10px 10px 0 0px;
-}
-.col-2-2 {
-  width: 50%;
-  float: right;
-  padding: 10px 0px 0 10px;
-}
 .align-right {
   display: inline;
 }
 .intro-text {
   text-align: center;
-  padding: 50px 0;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -57,7 +46,7 @@
   text-align: center;
 }
 .social-icons {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -72,4 +61,23 @@
 }
 .white {
   color: #ffffff;
+}
+
+.button-left {
+  width: 50%;
+  float: left;
+  padding: 0 10px 0 0px;
+}
+.button-right {
+  width: 50%;
+  float: right;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .intro-text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

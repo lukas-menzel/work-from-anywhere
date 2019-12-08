@@ -1,10 +1,10 @@
 <html>
   <head>
-    <!-- <script>
-            function load_result {
-           document.getElementById("result").innerHTML='<object type="text/html" data="result.html" ></object>';
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
       }
-    </script> -->
+    </script>
 
     <meta charset="UTF-8" />
     <meta
@@ -94,8 +94,8 @@
 
   <body>
     <header class="main-head">
-      <div class="container-1-3">
-        <div class="item-1-2">
+      <div class="container header">
+        <div class="col-1-of-2">
           <a href="index.html"
             ><img
               class="logo"
@@ -103,22 +103,51 @@
               alt="logo of WORK FROM ANYWHERE"
           /></a>
         </div>
-        <div class="item-2-2">
+        <div class="col-1-of-2">
           <nav class="main-nav">
             <ul>
-              <li>add new cafés</li>
-              <li>about</li>
-              <li>contact</li>
-              <li><div class="button-green align-right">Sign up</div></li>
+              <a href="#"><li>add new cafés</li></a>
+              <a href="#"><li>about</li></a>
+              <a href="#"><li>contact</li></a>
+              <a href="#"
+                ><li><div class="button--green align-right">Sign up</div></li></a
+              >
             </ul>
           </nav>
         </div>
       </div>
+      <div class="container header mobile">
+        <div class="col-1-of-2">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="img/logo.svg"
+              alt="logo of WORK FROM ANYWHERE"
+          /></a>
+        </div>
+        <div class="col-1-of-2">
+        <nav role="navigation">
+            <input type='checkbox' id='toggle' style='display:none;' />
+            <label class='toggle-btn toggle-btn__cross' for='toggle'>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </label>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact me</a></li>
+              </ul>
+            </nav>
+          </header>
+      </div>
     </header>
     <main class="content">
       <section class="section-above-the-field">
-        <div class="container__fullwidth-1-1 height">
-          <div class="item-1-1">
+        <div class="container above-the-field height center">
+          <div class="col-1-of-1">
             <h1>Find the best coffee shop to work nearby</h1>
             <p></p>
             <div>
@@ -126,18 +155,17 @@
                 <input class="search" type="text" placeholder="Search..." />
               </form>
             </div>
-            <div class="col-1-2">
-              <div class="button-green">Discover</div>
+            <div class="col-1-of-2 button-left">
+              <div class="button--green">Discover</div>
             </div>
-            <div class="col-2-2"><div class="button-black">Sign up</div></div>
+            <div class="col-1-of-2 button-right"><div class="button--black">Sign up</div></div>
           </div>
         </div>
       </section>
       <section class="section-information">
-        <div class="container-1-1">
-          <div class="item-1-1">
-            <div class="intro-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+        <div class="container information">
+          <div class="col-1-of-1 intro-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               ultrices eu blandit nisl. Quis id enim amet, lectus amet nec. Diam
               viverra risus purus quis dis leo rutrum pharetra id. Bibendum
               mattis porta dolor interdum tincidunt. Nulla maecenas ac posuere
@@ -145,12 +173,11 @@
               tellus turpis. Euismod pulvinar molestie facilisis aliquam lorem
               elit eu. Dolor lorem posuere eu accumsan, mattis quam. Non
               faucibus congue scelerisque nulla aliquet turpis nulla.
-            </div>
           </div>
         </div>
       </section>
       <section class="section-cafe-overview">
-        <div class="container-1-1">
+        <div class="container cafe-results">
           <h2 class="center">Cafés in Berlin</h2>
           <ul class="grid-overview">
             <li class="grid-element">
@@ -290,26 +317,24 @@
               </div>
             </li>
           </ul>
-          <div class="item-1-1">
-            <div class="button-black">Show 50+ cafés</div>
+          <div class="col-1-of-1">
+            <div class="button--black">Show 50+ cafés</div>
           </div>
         </div>
       </section>
       <section class="section-parallax">
-        <div class="container__fullwidth-1-1">
-          <div class="parallax-image">
-            <div class="button-center">
-              <div class="button-black">Discover new cafés</div>
-            </div>
+        <div class="container parallax parallax-image">
+          <div class="col-1-of-1">
+              <div class="button--black">Discover new cafés</div>
           </div>
         </div>
       </section>
       <section class="section-content">
-        <div class="container-1-2">
-          <div class="col-1-2">
+        <div class="container content-left-right">
+          <div class="col-1-of-2">
             <img src="img/coffeeshop.jpg" class="highlight-image" />
           </div>
-          <div class="col-2-2">
+          <div class="col-1-of-2">
             <h2>Find the best café in Berlin</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
@@ -317,9 +342,12 @@
               nulla a. Platea praesent metus vitae sagittis sit. Vel integer eu
               turpis elementum.
             </p>
-            <div class="button-black">More information</div>
+            <div class="button--black">More information</div>
           </div>
-          <div class="col-1-2">
+          <div class="col-1-of-2 mobile">
+            <img src="img/coffeeshop.jpg" class="highlight-image" />
+          </div>
+          <div class="col-1-of-2 mobile">
             <h2>Find the best café in Berlin</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
@@ -327,15 +355,9 @@
               nulla a. Platea praesent metus vitae sagittis sit. Vel integer eu
               turpis elementum.
             </p>
-            <div class="button-black">More information</div>
+            <div class="button--black">More information</div>
           </div>
-          <div class="col-2-2">
-            <img src="img/coffeeshop.jpg" class="highlight-image" />
-          </div>
-          <div class="col-1-2">
-            <img src="img/coffeeshop.jpg" class="highlight-image" />
-          </div>
-          <div class="col-2-2">
+          <div class="col-1-of-2 non-mobile">
             <h2>Find the best café in Berlin</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
@@ -343,27 +365,43 @@
               nulla a. Platea praesent metus vitae sagittis sit. Vel integer eu
               turpis elementum.
             </p>
-            <div class="button-black">More information</div>
+            <div class="button--black">More information</div>
+          </div>
+          <div class="col-1-of-2 non-mobile ">
+            <img src="img/coffeeshop.jpg" class="highlight-image" />
+          </div>
+          <div class="col-1-of-2">
+            <img src="img/coffeeshop.jpg" class="highlight-image" />
+          </div>
+          <div class="col-1-of-2">
+            <h2>Find the best café in Berlin</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+              diam quis neque in. Integer placerat consectetur eu risus sed
+              nulla a. Platea praesent metus vitae sagittis sit. Vel integer eu
+              turpis elementum.
+            </p>
+            <div class="button--black">More information</div>
           </div>
         </div>
       </section>
       <section class="section-cta">
-        <div class="container-1-2">
-          <div class="item-1-2">
+        <div class="container cta">
+          <div class="col-1-of-2">
             <h2>Add your favorite café</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div class="item-2-2">
-            <div class="button-transparent">Sign up</div>
+          <div class="col-1-of-2">
+            <div class="button--transparent">Sign up</div>
             <br />
-            <div class="button-black">Contact us</div>
+            <div class="button--black">Contact us</div>
           </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="section-footer">
-        <div class="container-1-1">
+        <div class="container footer">
           <div class="social-media">
             <h2 class="white">Follow us on Social Media</h2>
           </div>
@@ -372,9 +410,9 @@
             ><i class="fab fa-instagram"></i><i class="fab fa-linkedin"></i>
           </div>
           <div class="container__inline-grid-1-3">
-            <div class="col-1-3">©2019 WORK FROM ANYWHERE</div>
-            <div class="col-1-3"></div>
-            <div class="col-1-3">Imprint | Data privacy</div>
+            <div class="col-1-of-3">©2019 WORK FROM ANYWHERE</div>
+            <div class="col-1-of-3"></div>
+            <div class="col-1-of-3">Imprint | Data privacy</div>
           </div>
         </div>
       </section>

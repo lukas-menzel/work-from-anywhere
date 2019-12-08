@@ -55,7 +55,7 @@ While I already had some experience with basic CSS layout systems and Flexbox I 
 
 To test the website locally I used Node.JS, created a server.js and used a SASS watcher to compile css.
 
-Since the website is static I deployed it on Github pages. I also minified the production css files to optimize the website performance.
+Since the website is static I deployed it on Github pages.
 
 ## Reflection
 

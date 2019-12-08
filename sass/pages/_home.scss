@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.section-above-the-field {
+  background-image: url(../img/feature.jpg);
+  height: 80vh;
+}
+.section-cta {
+  widows: 100%;
+  background-color: #f5f5f5;
+}
+.section-footer {
+  widows: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0px;
+}
+.align-right {
+  display: inline;
+}
+.intro-text {
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-image {
+  background-image: url("../img/parallax.jpg");
+  height: 480px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.button-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.background-grey {
+  background-color: #f5f5f5;
+}
+.social-media {
+  text-align: center;
+}
+.social-icons {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.height {
+  height: 80vh;
+}
+.white {
+  color: #ffffff;
+}
+
+.button-left {
+  width: 50%;
+  float: left;
+  padding: 0 10px 0 0px;
+}
+.button-right {
+  width: 50%;
+  float: right;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .intro-text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

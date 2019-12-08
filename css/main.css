@@ -275,6 +275,11 @@ nav ul li {
     padding: 40px 0px; }
   nav ul {
     display: block; }
+  nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 0px !important;
+    color: #ffffff; }
   .logo {
     max-width: 70%;
     padding: 10px 20px; } }

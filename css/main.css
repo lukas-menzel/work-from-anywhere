@@ -209,196 +209,73 @@ section {
   max-width: 100%;
   padding: 20px 0px; }
 
+.main-nav {
+  padding: 20px 0px; }
+
 nav ul {
-  display: inline; }
+  display: flex; }
 
 nav ul li {
   display: inline;
   list-style: none;
-  padding: 20px; }
+  padding: 20px;
+  color: #ffffff; }
+
+.non-mobile-header {
+  display: grid; }
+
+.mobile-header {
+  display: none !important; }
+
+.mobile-header #mobile-menu {
+  display: none; }
+
+.mobile-header a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block; }
+
+/* Style the hamburger menu */
+.mobile-header a.icon {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px; }
 
 .bar1,
 .bar2,
 .bar3 {
   width: 35px;
-  height: 5px;
+  height: 3px;
   background-color: #000000;
-  margin: 6px 0;
+  margin: 5px 0;
   transition: 0.4s; }
 
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
+.active {
+  background-color: #009873;
+  color: white; }
 
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0; }
+.active .main-head {
+  background-color: #000000; }
 
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
-
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none; }
-
-#menuToggle a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease; }
-
-#menuToggle a:hover {
-  color: tomato; }
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none; }
-
-/*
-  * Just a quick hamburger
-  */
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%; }
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%; }
-  #menuToggle span:nth-last-child(2) :root {
-    font-size: 16px; }
-  #menuToggle span:nth-last-child(2) * {
-    box-sizing: border-box;
-    font-family: "Roboto", "Helvetica", "sans-serif";
-    color: #555; }
-  #menuToggle span:nth-last-child(2) body {
-    margin: 0;
-    padding: 0;
-    background-color: #151b1d; }
-  #menuToggle span:nth-last-child(2) main {
-    min-width: 200px;
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 10px; }
-    #menuToggle span:nth-last-child(2) main .wrap {
-      padding: 40px 20px;
-      background-color: #fff; }
-    #menuToggle span:nth-last-child(2) main .title {
-      font-size: 2em;
-      text-align: center;
-      margin: 20px auto 40px;
-      text-transform: uppercase; }
-  #menuToggle span:nth-last-child(2) header nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
+@media (max-width: 1024px) {
+  .non-mobile-header {
+    display: none !important; }
+  .mobile-header {
+    display: block !important; }
+  #mobile-menu {
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out; }
-    #menuToggle span:nth-last-child(2) header nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      left: 50%;
-      top: 170px;
-      transition: all 0.3s ease-in-out;
-      transform: translateX(-50%); }
-      #menuToggle span:nth-last-child(2) header nav ul li {
-        transform: translateY(50px);
-        opacity: 0; }
-        #menuToggle span:nth-last-child(2) header nav ul li a {
-          display: block;
-          font-size: 2em;
-          text-decoration: none;
-          padding: 10px 0;
-          text-align: center;
-          color: #fff;
-          font-weight: bold;
-          transition: all 0.2s ease-in-out;
-          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
-          #menuToggle span:nth-last-child(2) header nav ul li a:hover {
-            color: #e84a5f; }
-  #menuToggle span:nth-last-child(2) .toggle-btn {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    right: 10px;
-    top: 10px;
-    cursor: pointer; }
-    #menuToggle span:nth-last-child(2) .toggle-btn .bar {
-      width: 30px;
-      height: 2px;
-      margin: 7px auto;
-      background-color: #fff;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3); }
-      #menuToggle span:nth-last-child(2) .toggle-btn .bar:nth-child(2) {
-        width: 20px; }
-  #menuToggle span:nth-last-child(2) #toggle:checked ~ nav {
-    opacity: 1;
-    visibility: visible; }
-    #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul {
-      top: 70px; }
-      #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul li {
-        transform: translateY(0px);
-        opacity: 1; }
-        #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul li:nth-child(1) {
-          transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s; }
-        #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul li:nth-child(2) {
-          transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s; }
-        #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul li:nth-child(3) {
-          transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s; }
-        #menuToggle span:nth-last-child(2) #toggle:checked ~ nav ul li:nth-child(4) {
-          transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s; }
-  #menuToggle span:nth-last-child(2) #toggle:checked + label.toggle-btn .bar {
-    background-color: red; }
-    #menuToggle span:nth-last-child(2) #toggle:checked + label.toggle-btn .bar:nth-child(2) {
-      transform: translateX(50px);
-      opacity: 0; }
-    #menuToggle span:nth-last-child(2) #toggle:checked + label.toggle-btn .bar:nth-child(1) {
-      transform: translateY(10px) rotate(45deg); }
-    #menuToggle span:nth-last-child(2) #toggle:checked + label.toggle-btn .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg); }
+    background-color: #000000; }
+  .main-nav {
+    background-color: #000000;
+    padding: 40px 0px; }
+  nav ul {
+    display: block; }
+  .logo {
+    max-width: 70%;
+    padding: 10px 20px; } }
 
 .container {
   display: grid;
@@ -493,7 +370,7 @@ nav ul li {
 @media (max-width: 768px) {
   .header {
     grid-template-columns: 2fr 2fr;
-    padding: 0 20px; }
+    padding: 0; }
   .above-the-field {
     grid-template-columns: 1fr;
     padding: 0 20px; }

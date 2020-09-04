@@ -9,7 +9,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
